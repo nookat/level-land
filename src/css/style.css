@@ -56,6 +56,12 @@ a{
   color: inherit;
 }
 
+ul, 
+li{
+  list-style-type:none;
+}
+
+
 :root {
   --color-white: #ffffff;
   --color-grey: #F5F5F5;
@@ -85,7 +91,7 @@ body {
 	margin: 0 auto;
 }
 
-.footer__row {
+.footer__row-down {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,4 +123,28 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: var(--color-blue);
+}
+
+.footer__row-up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--color-grey);
+  padding: 48px 70px 50px;
+}
+
+.footer__socials{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__socials-icons {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+}
+
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
 }
