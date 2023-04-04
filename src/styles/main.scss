@@ -1,0 +1,15 @@
+@import './fonts';
+@import './vars';
+@import './mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include font-regular;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}

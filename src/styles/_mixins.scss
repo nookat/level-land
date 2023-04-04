@@ -1,0 +1,19 @@
+@mixin font-extrabold {
+  font-family: "MontserratExtraBold", sans-serif;
+}
+
+@mixin font-bold {
+  font-family: "MontserratBold", sans-serif;
+}
+
+@mixin font-semibold {
+  font-family: "MontserratSemiBold", sans-serif;
+}
+
+@mixin font-medium {
+  font-family: "MontserratMedium", sans-serif;
+}
+
+@mixin font-regular {
+  font-family: "MontserratRegular", sans-serif;
+}
