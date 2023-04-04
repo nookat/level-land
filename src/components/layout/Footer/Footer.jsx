@@ -1,12 +1,30 @@
 import React from 'react';
-import logo from '../../assets/img/logo.svg';
+import logo from '../../../assets/img/logo.svg';
+
+import { cn } from '@bem-react/classname';
 
 const Footer = () => {
+  const footer = cn('Footer');
+  const creator = cn('Creator');
+
   return (
-    <div className="Footer">
-      footer
-      <br/>
-      <img src={logo} alt=""/>
+    <div className={footer()}>
+      <div className={footer('Top')}>
+        fs
+      </div>
+      <div className={footer('Bottom')}>
+        <a href="#" className={footer('Politics')}>
+          Политика конфиденциальности
+        </a>
+        <span
+          className={footer('Copyright')}
+          dangerouslySetInnerHTML={{ __html: `${new Date().getFullYear()} &copy; ГК “LEVEL”<br> Ревизионные люки LEVEL. Все права защищены.` }}
+        />
+        <a href="#" className={creator()}>
+          <img src={logo} alt="Создание и продвижение сайта Cinar" className={creator('Logo')}/>
+          <span className={creator('Text')}>Создание и продвижение сайта</span>
+        </a>
+      </div>
     </div>
   );
 }
